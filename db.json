@@ -1,0 +1,28 @@
+{
+  "video": [
+    {
+      "id": 1,
+      "title": "Malak Video",
+      "genre": "comedien",
+      "public": 1,
+      "nbShared": 0
+    },
+    {
+      "public": 1,
+      "title": "malak",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "malakvalidation",
+      "public": 0,
+      "nbShared": 1
+    },
+    {
+      "public": "true",
+      "title": "test",
+      "id": 4,
+      "nbShared": 12
+    }
+  ]
+}

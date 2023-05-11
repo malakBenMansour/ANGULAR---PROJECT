@@ -1,0 +1,33 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+              </div>
+    </div> <br>
+   
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">!-->
+    <div class="row">
+        <div class="col-md-4" *ngFor="let video of listVideo , let i = index">
+            <div >
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="data:image/png;base64,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">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ video.title }}</h5>
+                        <p class="card-text">genre : {{ video.genre }} | public : {{ video.public }} | nbShared : {{
+                            video.nbShared }}</p>
+                         
+                              <div>
+
+                            <button type="button" class="btn btn-primary" (click)="modifier(i)">Modifier </button>
+                             
+                            <button type="button" class="btn btn-primary" (click)="partager(i)">Partager</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
